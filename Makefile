@@ -5,6 +5,8 @@ lint:
 	flake8 hello_world test
 run:
 	python main.py
+dockerbuild:
+	docker build -t hello-world-pointer
 .PHONY: test
 test:
 	PYTHONPATH=. py.test --verbose -s

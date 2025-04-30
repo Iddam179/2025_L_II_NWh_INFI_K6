@@ -12,7 +12,6 @@ docker_build:
 	docker build -t hello-world-printer .
 USERNAME=iddam179
 TAG=$(USERNAME)/hello-world-printer
-DOCKER_PASSWORD=dckr_pat_ejGwDHHleiMvqDdd7fcjzwVJXYI
 docker_run: docker_build
 	docker run \
 		--name hello-world-printer-dev \
